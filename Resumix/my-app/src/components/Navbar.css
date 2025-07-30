@@ -1,0 +1,17 @@
+.navbar{
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 800px solid transparent; /* Adjust size as needed */
+  border-right: 800px solid transparent; /* Adjust size as needed */
+  border-top: 150px solid black; /* The visible side of the triangle */
+  left: 50%; /* Center it horizontally */
+  transform: translateX(-50%);
+
+}
+
+.navbar ul li{
+    color: black;
+}
+
+

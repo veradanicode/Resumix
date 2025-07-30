@@ -1,3 +1,11 @@
+@keyframes myAnimation {
+    0%{
+        transform: scale(2);
+    }
+    100%{
+        transform: scale(3);
+    }
+}
 
 html, body, #root {
   height: 100%;
@@ -17,7 +25,39 @@ html, body, #root {
   justify-content: center;
 }
 
+.content{
+    text-align: center
+}
 
-.u {
+
+.container span {
   color: brown;
+}
+
+.header{
+  font-size: 3.2em;
+  line-height: 1.1;
+    animation-name: myAnimation;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    margin-top: -5%;
+    text-shadow: 1px 1px 0px blue, 2px 2px 0px brown;
+
+}
+
+.content p{
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.container button{
+  margin-top: 15px;
+  border-radius: 40px;
+  padding: 15px;
+}
+
+.container button:hover{
+  font-weight: bold;
 }
