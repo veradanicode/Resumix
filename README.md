@@ -84,10 +84,10 @@ Resume writing tips for job roles
 
 📬 Contact
 Vera Daniel
-📧 veradanicode@gmail.com
-🐙 GitHub
-💼 www.linkedin.com/in/vera-daniel-4a6942299
-🐦 Twitter
+📧 veradanicode@gmail.com  
+🐙 [GitHub](https://github.com/veradanicode)  
+💼 [LinkedIn](https://www.linkedin.com/in/vera-daniel-4a6942299)  
+🐦 [Twitter](https://twitter.com/veradanicode)
 
 Built with ❤️ by @veradanicode
 
