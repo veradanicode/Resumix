@@ -1,22 +1,19 @@
-import { useState } from 'react'
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import LandingPage from './components/LandingPage'
-import Navbar from './components/Navbar'
-import ResumeForm from './components/ResumeForm'
-import Templates from './components/templates';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import LandingPage from './components/LandingPage';
+import ResumeForm from './components/ResumeForm';
 
 function App() {
   return (
-    <Router>
+    <>
+      <Navbar />
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/" element={<Templates />} />
         <Route path="/resume-form" element={<ResumeForm />} />
-    
       </Routes>
-    </Router>
-    
-  )
+    </>
+  );
 }
 
-export default App
+export default App;

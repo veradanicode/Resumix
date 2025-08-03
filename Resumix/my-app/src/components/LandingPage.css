@@ -1,84 +1,68 @@
-@keyframes myAnimation {
-    0%{
-        transform: scale(2);
-    }
-    100%{
-        transform: scale(3);
-    }
-}
-
-html, body, #root {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-
-.container {
-  background-color: aliceblue;
-  color: black;
-  width: 100%;
-  height: 100vh;
+.landing {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 1rem 8%;
+  background: linear-gradient(135deg, #4CAF93 0%, #E0F2F1 100%);
+  min-height: 90vh;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
-.content{
-  padding-top: 10%;
-    text-align: center
+.landing-content {
+  max-width: 550px;
 }
 
-
-.container span {
-  color: brown;
+.landing-content h1 {
+  font-size: 5rem;
+  color: #1F2937;
+  margin-bottom: 1rem;
+  line-height: 1.2;
 }
 
-.header{
-  font-size: 3.2em;
-  line-height: 1.1;
-    animation-name: myAnimation;
-    animation-duration: 10s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    margin-top: -5%;
-    text-shadow: 1px 1px 0px blue, 2px 2px 0px brown;
+.landing-content h1 span{
+  font-size: 6rem;
+  color: darkgreen;
 
 }
 
-.content p{
-   padding-top: 4%;
-    font-weight: bold;
+.landing-content p {
+  font-size: 1.1rem;
+  color: #607D8B;
+  margin-bottom: 2rem;
 }
 
-.container button{
-  margin-top: 15px;
-  border-radius: 40px;
-  padding: 15px;
-}
-
-.container button:hover{
+.hero-btn {
+  background-color: #4CAF93;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
   font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
-img{
-  width: 60vh;
-  height: 50vh;
+.hero-btn:hover {
+  background-color: #3b8e7c;
+}
+
+.landing-image  {
+  max-width: 480px;
+  width: 100%;
+  height: auto;
+}
+
+.landing-section::before {
+  content: '';
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 10%;
-  left: 35%;
-  right: 1%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 0;
 }
-@media (max-width: 768px) {
-  .content{
-    padding-top: 30%;
-  }
-  img{
-    left: 20%;
-  }
-}
+
+

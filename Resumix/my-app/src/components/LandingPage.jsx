@@ -1,30 +1,26 @@
-import React from 'react'
-import './LandingPage.css'
-import stamp from '../assets/stamp.png'
-import { useNavigate } from "react-router-dom";
-import Navbar from './Navbar'
-import Templates from './templates';
-
+import React from 'react';
+import './LandingPage.css';
+import ImageSlider from './ImageSlider';
+import Features from './features';
+import HowItWorks from './HowItWorks';
 
 const LandingPage = () => {
-  const navigate = useNavigate();
   return (
-    <div>
-       <div className='container'>
-          <Navbar/>
-          <div className='content'>
-            <img src={stamp} alt="stamp" />
-              <h1 className='header'>RES<span className='u'>U</span>MIX</h1>
-              <p>Mix, match, and build your perfect resume in minutes.</p>
-              <button onClick={() => navigate('/resume-form')}> Generate resume</button>
-          </div>
-       </div>
-       <div>
-          <Templates/>
-        </div>
-    </div>
+  <div>
+      <section className="landing">
+      <div className="landing-content">
+        <h1>Create <span className='stunning'>Stunning</span> Resumes in Minutes</h1>
+        <p>With Resumix, building your perfect resume is fast, customizable, and completely free. No sign-ups. Just fill and download.</p>
+        <a href="#get-started" className="hero-btn">Get Started</a>
+      </div>
+      <div className="landing-image">
+        <ImageSlider />
+      </div>
+    </section>
+    <HowItWorks />
+    <Features />
+  </div>
+  );
+};
 
-  )
-}
-
-export default LandingPage
+export default LandingPage;
