@@ -1,5 +1,5 @@
 import React from 'react';
-import './Features.css';
+import './features.css';
 import { FaRegFileAlt, FaPalette, FaDownload, FaRocket } from 'react-icons/fa';
 
 const Features = () => {
