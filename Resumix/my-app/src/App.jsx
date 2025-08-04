@@ -7,7 +7,7 @@ import ResumeForm from './components/ResumeForm';
 function App() {
   return (
     <>
-      <Navbar />
+      
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/resume-form" element={<ResumeForm />} />
