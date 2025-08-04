@@ -12,7 +12,7 @@
 }
 
 .logo {
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #4CAF93;
 }
@@ -46,4 +46,47 @@
   background-color: #3b8e7c;
   color: white;
 
+}
+
+/* Hamburger menu */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #1F2937;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70%;
+    right: 0;
+    background-color: white;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    display: none;
+    padding: 1rem 2rem;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links li {
+    width: 100%;
+    margin-left: 2rem;
+    margin-bottom: 0rem;
+  }
 }
