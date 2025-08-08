@@ -1,131 +1,252 @@
-.form-wrapper {
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+
+.resume-wrapper {
+  position: relative;
   min-height: 100vh;
-  padding: 3rem 1rem;
-  background: linear-gradient(135deg, #e6fff5, #f0fdf4);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: fadeIn 1s ease-in-out;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #F9FAFB; 
 }
 
-.resume-form {
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(10px);
-  max-width: 850px;
+.mint-background {
+  background-color: #4CAF93; 
+  height: 200px;
   width: 100%;
-  padding: 2rem 2.5rem;
-  border-radius: 18px;
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.07);
-  transition: transform 0.3s ease;
-}
-
-.resume-form:hover {
-  transform: translateY(-3px);
-}
-
-.resume-form h2 {
-  text-align: center;
-  color: #1F2937;
-  margin-bottom: 2rem;
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-.form-section h3 {
-  color: #4CAF93;
-  margin-bottom: 1rem;
-  font-size: 1.1rem;
-}
-
-.form-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.input-group {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  padding: 0.7rem 1rem;
-  background-color: white;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.input-group:focus-within {
-  border-color: #4CAF93;
-  box-shadow: 0 0 0 3px rgba(76, 175, 147, 0.2);
-}
-
-.input-group svg {
-  margin-right: 0.7rem;
-  color: #607D8B;
-  font-size: 1.1rem;
-  transition: color 0.3s;
-}
-
-.input-group:focus-within svg {
-  color: #4CAF93;
-}
-
-.input-group input,
-.input-group textarea {
-  flex: 1;
-  border: none;
-  outline: none;
-  font-size: 1rem;
-  background: transparent;
-  color: #1F2937;
-}
-
-textarea {
-  resize: none;
-}
-
-button[type="submit"] {
-  display: block;
-  width: 100%;
-  margin-top: 1rem;
-  padding: 1rem;
-  background-color: #4CAF93;
-  color: white;
-  font-weight: bold;
-  border: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button[type="submit"]:hover {
-  background-color: #3a9d7e;
-}
-
-/* Animation */
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.bg-art {
   position: absolute;
-  top: 5%;
-  right: 5%;
-  opacity: 0.05;
+  top: 0;
+  left: 0;
   z-index: 0;
 }
 
-.form-wrapper {
-  background-image: url('/bg-doodle.png'); /* or .png if it's PNG */
-  background-repeat: repeat;
-  background-size: contain;
-  background-attachment: fixed;
+
+.resume-content {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+}
+
+
+.resume-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0 0.5rem;
+}
+
+.resume-topbar h2 {
+  margin: 0;
+}
+
+
+
+
+.resume-form-wrapper {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+
+.sidebar {
+  width: 250px;
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  padding: 0.9rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  color: #1F2937; 
+}
+
+.sidebar li.active,
+.sidebar li:hover {
+  background-color: #4CAF93; 
+  color: white;
+  font-weight: bold;
+  border-color: #4CAF93;
+}
+
+
+.form-content {
+  flex: 1;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  color: #1F2937;
+}
+
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-header h3 {
+  margin: 0;
+}
+
+
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.form-grid input {
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+
+.checkbox-group {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.back-btn,
+.next-btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.back-btn {
+  background-color: #eee;
+  color: #1F2937;
+}
+
+.next-btn {
+  background-color: #4CAF93; 
+  color: white;
+}
+.sidebar .icon {
+  margin-right: 10px;
+  vertical-align: middle;
+  color: #1F2937;
+}
+.sidebar li.active .icon,
+.sidebar li:hover .icon {
+  color: white;
+}
+
+.sidebar {
+  width: 250px;
+  background: white;
+  padding: 2rem 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  position: relative;
+}
+
+.sidebar::before {
+  content: '';
+  position: absolute;
+  top: 2.5rem;
+  left: 15px;
+  height: calc(100% - 5rem);
+  width: 2px;
+  background-color: #ccc;
+  z-index: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.sidebar li {
+  padding: 0.9rem 1rem 0.9rem 2.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  color: #1F2937;
+  position: relative;
+  z-index: 1;
+}
+
+.sidebar li::before {
+  content: '';
+  position: absolute;
+  left: 0.8rem;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+  border: 2px solid white;
+  box-shadow: 0 0 0 2px #ccc;
+}
+
+.sidebar li.active::before {
+  background-color: #4CAF93;
+  box-shadow: 0 0 0 2px #4CAF93;
+}
+
+.sidebar li.completed::before {
+  background-color: #4CAF93;
+  box-shadow: 0 0 0 2px #4CAF93;
+}
+
+.sidebar li:hover {
+  background-color: #4CAF93;
+  color: white;
+  font-weight: bold;
+  border-color: #4CAF93;
+}
+
+.input-header {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1F2937; 
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.input-group label {
+  margin-bottom: 4px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #1F2937; 
 }

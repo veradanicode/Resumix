@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.3rem 8%;
+  padding: 2rem 8%;
   background: linear-gradient(135deg, #4CAF93 0%, #E0F2F1 100%);
   min-height: 90vh;
   gap: 2rem;
@@ -14,14 +14,14 @@
 }
 
 .landing-content h1 {
-  font-size: clamp(5rem, 6vw, 6rem); /* Min 1.5rem, scales with viewport, max 3rem */
+  font-size: clamp(5rem, 6vw, 6rem); 
   color: #1F2937;
   margin-bottom: 1rem;
   line-height: 1.2;
 }
 
 .landing-content h1 span{
-  font-size: clamp(6rem, 7vw, 7rem); /* Min 1.5rem, scales with viewport, max 3rem */
+  font-size: clamp(6rem, 7vw, 7rem); 
   color: darkgreen;
 
 }
