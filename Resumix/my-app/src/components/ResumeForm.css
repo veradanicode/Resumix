@@ -148,6 +148,16 @@ html, body, #root {
   color: #1F2937;
 }
 
+
+.next-btn:hover{
+  font-weight: 600;
+}
+
+.back-btn:hover{
+  font-weight: 600;
+}
+
+
 .next-btn {
   background-color: #4CAF93; 
   color: white;
@@ -246,6 +256,21 @@ html, body, #root {
 
 .input-group label {
   margin-bottom: 4px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #1F2937; 
+}
+
+
+.input-group1  {
+  margin-bottom: 4;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #1F2937; 
+}
+
+.input-group1 textarea {
+  margin-bottom: 20px;
   font-size: 0.95rem;
   font-weight: 500;
   color: #1F2937; 
