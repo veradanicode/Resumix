@@ -108,7 +108,7 @@ html, body, #root {
 
 .form-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 1.5rem;
   margin-top: 1.5rem;
 }
@@ -274,4 +274,17 @@ html, body, #root {
   font-size: 0.95rem;
   font-weight: 500;
   color: #1F2937; 
+}
+/* Tablet and above */
+@media (min-width: 768px) {
+  .form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop and above */
+@media (min-width: 1024px) {
+  .form-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
