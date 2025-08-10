@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -20,7 +21,7 @@ const Navbar = () => {
         <li><a href="#features">Features</a></li>
         <li><a href="#templates">Templates</a></li>
         <li><a href="#how-it-works">How It Works</a></li>
-        <li><a href="#resume-form" className="cta">Get Started</a></li>
+        <li><Link to="/resume-form">Get Started</Link></li>
       </ul>
     </nav>
   );
