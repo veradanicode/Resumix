@@ -240,6 +240,7 @@ const handleDateChange = (key, date) => {
       <button
       type="button"
       onClick={() => handleRemove(index)}
+      className='delete-btn'
       style={{
           marginTop: "1rem",
           padding: "0.5rem 1rem",
