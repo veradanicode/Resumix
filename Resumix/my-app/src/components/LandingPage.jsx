@@ -5,6 +5,7 @@ import ImageSlider from './ImageSlider';
 import Features from './features';
 import HowItWorks from './HowItWorks';
 import Navbar from './Navbar'
+import Footer from './Footer';
 
 const LandingPage = () => {
   return (
@@ -22,6 +23,7 @@ const LandingPage = () => {
     </section>
     <HowItWorks />
     <Features />
+    <Footer/>
   </div>
   );
 };
