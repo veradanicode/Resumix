@@ -3,44 +3,52 @@ import React from 'react';
 import './Footer.css';
 
 const Footer = () => (
-  <footer className="footer">
-    <div className="footer-container">
-      <div className="footer-brand">
-        <h2>Resumix</h2>
-        <p>Your resume, your way</p>
-      </div>
-      <div className="footer-nav">
-        <div className="nav-column">
-          <h4>Company</h4>
-          <a href="/about">About</a>
-          <a href="/templates">Templates</a>
-          <a href="/how-it-works">How It Works</a>
-        </div>
-        <div className="nav-column">
-          <h4>Resources</h4>
-          <a href="/blog">Blog</a>
-          <a href="/faqs">FAQs</a>
-          <a href="/contact">Contact</a>
-        </div>
-        <div className="nav-column">
-          <h4>Support</h4>
-          <a href="/privacy">Privacy Policy</a>
-          <a href="/terms">Terms of Use</a>
-          <a href="/feedback">Feedback</a>
-        </div>
-      </div>
-      <div className="footer-social">
-        {/* Replace with your icons */}
-        <a href="#"><i className="fab fa-twitter"></i></a>
-        <a href="#"><i className="fab fa-facebook-f"></i></a>
-        <a href="#"><i className="fab fa-instagram"></i></a>
+  <footer class="footer">
+  <div class="footer-container">
+    
+    <div class="footer-brand">
+      <h2>ResumeMix</h2>
+      <p>Create beautiful resumes in minutes.</p>
+      <div class="footer-socials">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
       </div>
     </div>
-    <div className="footer-bottom">
-      <p>© {new Date().getFullYear()} Resumix. All rights reserved.</p>
-      <p className="back-to-top" onClick={() => window.scrollTo(0,0)}>Back to top ↑</p>
+
+    
+    <div class="footer-links">
+      <h3>Company</h3>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
     </div>
-  </footer>
+
+    <div class="footer-links">
+      <h3>Support</h3>
+      <ul>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Privacy</a></li>
+      </ul>
+    </div>
+
+    
+    <div class="footer-newsletter">
+      <h3>Subscribe</h3>
+      <form>
+        <input type="email" placeholder="Your email" />
+        <button type="submit">Join</button>
+      </form>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 ResumeMix. All rights reserved.</p>
+  </div>
+</footer>
+
 );
 
 export default Footer;
