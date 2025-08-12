@@ -16,7 +16,16 @@
   font-weight: bold;
   color: #4CAF93;
 }
-
+.gs-btn{
+  background-color: #4CAF93;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
 .nav-links {
   list-style: none;
   display: flex;
