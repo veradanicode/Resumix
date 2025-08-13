@@ -25,6 +25,7 @@
   font-weight: bold;
   text-decoration: none;
   transition: background-color 0.3s ease;
+  display: flex;
 }
 .nav-links {
   list-style: none;
