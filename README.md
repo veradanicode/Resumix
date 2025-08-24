@@ -64,7 +64,8 @@ Contributions, issues, and feature requests are welcome!
 Feel free to fork the repo and submit pull requests.
 
 📧 Contact
-Vera Daniel – [GitHub](https://github.com/veradanicode) | www.linkedin.com/in/vera-daniel-4a6942299 | [Twitter](https://x.com/veradanicode)
+Vera Daniel – [GitHub](https://github.com/veradanicode) |[Linkedin]( www.linkedin.com/in/vera-daniel-4a6942299) | [Twitter](https://x.com/veradanicode)
+
 Email: veradanicode@gmail.com
 
 ⭐ If you like this project, please give it a star on GitHub!
