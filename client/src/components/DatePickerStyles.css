@@ -1,0 +1,22 @@
+.react-datepicker {
+  font-family: Arial, sans-serif;
+  border: none;
+  background-color: #f9fafb; 
+}
+
+.react-datepicker__header {
+  background-color: #4CAF93;
+  color: white;
+  border-bottom: none;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected {
+  background-color: #4CAF93 !important;
+  color: white;
+}
+
+.react-datepicker__day:hover {
+  background-color: #4CAF93;
+  color: white;
+}

@@ -1,0 +1,45 @@
+.features-section {
+  background-color: #F9FAFB;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #1F2937;
+}
+
+.features-header h2 {
+  font-size: 2rem;
+  color: #4CAF93;
+  margin-bottom: 0.5rem;
+}
+
+.features-header p {
+  font-size: 1rem;
+  color: #607D8B;
+  margin-bottom: 2rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(76, 175, 147, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(76, 175, 147, 0.25);
+}
+
+.feature-icon {
+  font-size: 2rem;
+  color: #4CAF93;
+  margin-bottom: 1rem;
+}
