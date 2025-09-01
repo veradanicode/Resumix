@@ -1,7 +1,7 @@
 .navbar {
   background-color: #F9FAFB;
   color: #1F2937;
-  padding: 0.1rem 2rem;
+  padding: 0rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,6 +9,7 @@
   position: sticky;
   top: 0;
   z-index: 10;
+  height:8vh ;
 }
 
 .logo {
@@ -43,7 +44,7 @@
 .nav-links a {
   text-decoration: none;
   color: #1F2937;
-  font-weight: 500;
+  font-weight: 900;
   transition: color 0.3s ease;
 }
 
@@ -51,19 +52,7 @@
   color: #4CAF93;
 }
 
-.cta {
-  background-color: #4CAF93;
-  color: #1F2937;
-  padding: 0.5rem 1rem;
-  border-radius:  7px;
-  font-weight: 600;
-}
 
-.cta:hover {
-  background-color: #3b8e7c;
-  color: white;
-
-}
 
 /* Hamburger menu */
 .menu-toggle {
