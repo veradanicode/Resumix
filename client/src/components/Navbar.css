@@ -39,17 +39,21 @@
   list-style: none;
   display: flex;
   gap: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+
 }
 
 .nav-links a {
   text-decoration: none;
   color: #1F2937;
-  font-weight: 900;
+  font-weight: bold;
   transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: #4CAF93;
+  color: #03974d;
+
 }
 
 
