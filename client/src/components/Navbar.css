@@ -28,12 +28,12 @@
   transition: background-color 0.3s ease;
   display: flex;
   max-width: fit-content;
+  background-color: transparent;
 }
 
 .gs-btn:hover{
   font-weight: bold;
-  color: white;
-  font-size: large;
+  color: #1F2937;
 }
 .nav-links {
   list-style: none;
