@@ -11,6 +11,7 @@ const LandingPage = () => {
   return (
   <div>
     <Navbar/>
+    
       <section className="landing">
       <div className="landing-content">
         <h1>Create <span className='stunning'>Stunning</span> Resumes in Minutes</h1>
