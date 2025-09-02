@@ -18,8 +18,8 @@ const Navbar = () => {
       </div>
 
       <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#templates">Templates</a></li>
+        <li><Link to ="/features">Features</Link></li>
+        <li><Link href="/templates">Templates</Link></li>
         <li><Link to ="/how-it-works">How It Works</Link></li>
         <li className='gs-btn'><Link to="/resume-form">Get Started</Link></li>
       </ul>
