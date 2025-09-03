@@ -3,10 +3,10 @@ import React from 'react';
 import './Footer.css';
 
 const Footer = () => (
-  <footer class="footer">
-  <div class="footer-container">
+  <footer className="footer">
+  <div className="footer-container">
     
-    <div class="footer-brand">
+    <div className="footer-brand">
       <h2>ResumeMix</h2>
       <p>Create beautiful resumes in minutes.</p>
       <div class="footer-socials">
@@ -17,7 +17,7 @@ const Footer = () => (
     </div>
 
     
-    <div class="footer-links">
+    <div className="footer-links">
       <h3>Company</h3>
       <ul>
         <li><a href="#">About</a></li>
@@ -26,7 +26,7 @@ const Footer = () => (
       </ul>
     </div>
 
-    <div class="footer-links">
+    <div className="footer-links">
       <h3>Support</h3>
       <ul>
         <li><a href="#">Help Center</a></li>
@@ -36,7 +36,7 @@ const Footer = () => (
     </div>
 
     
-    <div class="footer-newsletter">
+    <div className="footer-newsletter">
       <h3>Subscribe</h3>
       <form>
         <input type="email" placeholder="Your email" />
@@ -44,7 +44,7 @@ const Footer = () => (
       </form>
     </div>
   </div>
-  <div class="footer-bottom">
+  <div className="footer-bottom">
     <p>© 2025 Resumix. All rights reserved.</p>
   </div>
 </footer>
