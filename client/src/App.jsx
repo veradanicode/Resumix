@@ -4,7 +4,6 @@ import Navbar from './components/Navbar';
 import LandingPage from './components/LandingPage';
 import ResumeForm from './components/ResumeForm';
 import Features from './components/features';
-import Templates from './components/Templates';
 import HowItWorks from './components/HowItWorks';
 
 
@@ -16,7 +15,6 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/resume-form" element={<ResumeForm />} />
         <Route path="/features" element={<Features />} />
-        <Route path="/templates" element={<Templates />} />
         <Route path="/how-it-works" element={<HowItWorks />} />
       </Routes>
     </>
