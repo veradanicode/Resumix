@@ -8,11 +8,6 @@ const ImageSchema=new mongoose.Schema({
     publicId:{
         type:String,
         required:true
-    },
-    uploadedBy:{
-        type:mongoose.Schema.Types.ObjectId,
-        ref:'User',
-        required:true
     }
 },{timestamps:true})
 
