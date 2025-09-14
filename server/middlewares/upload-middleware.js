@@ -1,8 +1,8 @@
-const multer =require('multer')
-const path =require('path')
+const multer =require("multer");
+const path =require("path");
 
 //set up multer storage
-const storage =await multer.diskStorage({
+const storage = multer.diskStorage({
     destination:function(req,file,cb){
         cb(null,'uploads/')
     },
