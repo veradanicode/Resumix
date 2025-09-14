@@ -7,7 +7,7 @@ const ImageUpload =async(req,res)=>{
         if (!req.file) {
             return  res.status(401).json({
             success:false,
-            message:"Image does not exists!"
+            message:"Image file is required!"
         })
         }
 
